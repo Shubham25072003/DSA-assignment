@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max_of_four(int x,int y,int z,int m){
+    if(x>y && x>z && x>m){
+        return x;
+    }
+    else if(y>x && y>z && y>m){
+        return y;
+        
+    }
+    else if(z>x && z>y && z>m){
+        return z;
+    }
+    else if(m>x && m>z && m>y){
+        return m;
+    }
+    else{
+        return x;
+    }
+}
+
+int main() {
+    int x, y, z, m;
+    scanf("%d %d %d %d", &x, &y, &z, &m);
+    int ans = max_of_four(x, y, z, m);
+    printf("%d", ans);
+    
+    return 0;
+}

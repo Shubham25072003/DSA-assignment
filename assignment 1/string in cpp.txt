@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string a;
+    cin>>a;
+    string b;
+    cin>> b;
+    int len1=a.size(),len2=b.size();
+    cout<<len1<< " " << len2<<"\n";
+    string c=a+b;
+    cout<<c<<"\n";
+    char flag=a[0];
+    a[0]=b[0];
+    b[0]=flag;
+    cout<<a<<" "<<b;
+  
+    return 0;
+}
